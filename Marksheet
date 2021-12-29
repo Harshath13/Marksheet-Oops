@@ -1,0 +1,32 @@
+import java.util.*;
+public class Marksheet
+{
+public static void main (String arg[])
+{
+int english,science,tamil,maths,sum,roll;
+String name;
+double div;
+Scanner in = new Scanner(System.in);
+System.out.println("enter the name");
+name=in.nextLine();
+System.out.println("enter the roll no");
+
+roll=in.nextInt();
+System.out.print("enter the english mark");
+english=in.nextInt();
+System.out.print("enter the science mark");
+science=in.nextInt();
+System.out.print("enter the tamil mark");
+tamil=in.nextInt();
+System.out.print("enter the maths mark");
+maths=in.nextInt();
+sum=english+science+tamil+maths;
+div=sum/4;
+System.out.println("subject"+" "+"Marks");
+System.out.println("English"+" "+english);
+System.out.println("Science"+" "+science);
+System.out.println("Tamil"+" "+tamil);
+System.out.println("Maths"+" "+maths);
+System.out.println("percent"+" "+div);
+}
+}
